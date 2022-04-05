@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quoted
+{% endblock %}
+
+{% block main %}
+
+<p>A share of {{ values.name }} costs {{ usd_price }}.</p>
+
+<!--
+    <table class="table">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">Name</th>
+          <th scope="col">Price</th>
+          <th scope="col">Symbol</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for value in values %}
+        <tr>
+          <th scope="row">{{ value.name }}</th>
+          <td>{{ value.price }}</td>
+          <td>{{ value.symbol }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+-->
+{% endblock %}
